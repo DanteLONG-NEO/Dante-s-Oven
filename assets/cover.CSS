@@ -6,6 +6,13 @@
     background-size: cover;
     background-position: center;
     animation: backgroundSlider 12s infinite;
+
+    overflow-y: scroll; /* 保持滚动功能 */
+    scrollbar-width: none; /* Firefox 隐藏滚动条 */
+}
+
+#cover::-webkit-scrollbar { 
+    display: none; 
 }
 
 @keyframes backgroundSlider {
@@ -29,6 +36,8 @@
     left: 50%;
     transform: translate(-50%, -50%); /* 居中 */
 
+    width: 23.6%;
+
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -42,20 +51,25 @@
     align-items: center;
     justify-content: center;
 
-    width: 320px;
-    margin: 0;
+    width: 100%;
 }
 
-/* 设置文字层 */
-#cover h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cover-chevron-down{
+    position: absolute;
+    bottom: 24px;
 
-    width: 320px;
-    color: #7c0002;
-    font-size: 3rem;
-    margin: 0;
+    width: 25px;
+    fill: rgba(255, 255, 255, 0.5);
+
+    z-index: 3;
+}
+
+.cover-chevron-down:hover{
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+.cover-chevron-down:active{
+    fill: rgba(255, 255, 255, 0.5);
 }
 
 .cover-shader{
@@ -64,7 +78,9 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+
+    background: radial-gradient(ellipse 100% 100%, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(1px);
     z-index: 1;
 }
 
