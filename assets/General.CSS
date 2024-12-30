@@ -19,9 +19,7 @@ body {
 }
 
 .page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
     height: 100vh; /* 每页高度为视口高度 */
     color: white;
     font-size: 2rem;
