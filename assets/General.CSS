@@ -4,7 +4,6 @@ body, html {
     padding: 0;
     height: 100%;
     scroll-behavior: smooth; /* 平滑滚动 */
-    
 }
 
 /* 配置滚动行为 */
@@ -12,21 +11,35 @@ body {
     scroll-snap-type: y mandatory; /* 强制每次滚动到页面中心 */
 }
 
-.h1,h2,h3,h4,h5{
-    font-family: roboto, arial;
+.h1,h2,h3,h4,h5,h6{
+    font-family: arial;
     margin: 0;
     padding: 0;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 24px;
+}
+
+h6{
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 .page {
     margin: 0;
     height: 100vh; /* 每页高度为视口高度 */
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
     font-family: Arial, sans-serif;
     scroll-snap-align: center; /* 配合 scroll-snap */
+    display: none;
 }
 
+.page.active{
+    display: block;
+}
 
 
 

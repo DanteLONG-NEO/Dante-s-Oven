@@ -67,3 +67,52 @@ function scrollPrevious() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 }
+
+//Language Translator
+let currentLanguage = 'en';
+
+// 获取所有带有 data-* 属性的元素
+const translatableElements = document.querySelectorAll('[zh], [en]');
+
+// 获取切换语言的按钮
+const zhButton = document.getElementById('language-zh');
+const enButton = document.getElementById('language-en');
+
+// 更新页面语言的函数
+function updateLanguage() {
+    translatableElements.forEach(element => {
+    // 根据当前语言更新内容
+    element.textContent = element.getAttribute(`${currentLanguage}`);
+    });
+}
+
+// 点击中文按钮时切换语言
+zhButton.addEventListener('click', () => {
+    currentLanguage = 'zh';
+    updateLanguage();
+});
+
+// 点击英文按钮时切换语言
+enButton.addEventListener('click', () => {
+    currentLanguage = 'en';
+    updateLanguage();
+});
+
+// 初次加载时更新页面语言
+updateLanguage();
+
+
+//Page Switch
+        function switchPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.content');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show the selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+        }

@@ -10,6 +10,10 @@
     width: 100%;
     height: 80px;
     background-color: white;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.2);
+
 }
 
 .left{
@@ -46,6 +50,7 @@
     
 
     display: flex;
+    flex-direction: row;
     flex-shrink: 0;
     justify-content: right;
 }
@@ -53,24 +58,25 @@
 /*Text Style*/
 .navigation-bar h6{
     font-family: roboto, arial;
-    font-weight: 400;
     margin: 0;
     padding: 0;
     font-size: 16px;
 
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.5);
 }
 
 .navigation-bar h6:hover{
-    color: red;
+    color: #eb6100;
     cursor: pointer;
 }
 
 .center h6{
     margin: 0px 24px;
+    font-weight: 500;
 }
 
 .right h6{
+    font-family: roboto, arial;
     margin: 0px 6px;
     font-weight: 200;
 }
@@ -78,5 +84,65 @@
 
 #aboutMe{
     position: relative;
-    background-color: aqua;
+    display: block;
+}
+
+/*Content Style*/
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 60px;
+    flex-shrink: 0;
+    
+    align-items: top;
+
+    width: 1000px;
+
+    padding-top: 80px;
+}
+
+.text-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin-top: 0;
+    
+}
+
+.name{
+    align-items: top;
+}
+
+.intro{
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.contact svg{
+    height: 30px;
+    fill: rgba(0,0,0,0.3);
+    margin-right: 12px;
+    padding-bottom: 12px;
+}
+
+.linkedin{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,0.3);
+
+    margin-bottom:12px;
+    margin-right: 36px;
+
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 100;
 }
