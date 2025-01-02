@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+    flex-shrink: 0;
+
     column-gap: 48px;
     row-gap: 48px;
 
@@ -19,6 +21,7 @@
     padding: 0;
     margin: 0;
     margin-top: 12px;
+    margin-bottom: 6px;
     line-height: 1.5;
 
 }
@@ -28,4 +31,27 @@
     padding: 0;
     margin: 0;
     line-height: 1.5;
+}
+
+#research{
+    height: 100vh;
+    justify-content: top;
+    align-items: center;
+}
+
+.reference{
+    padding: 48px;
+    margin-top: 80px;
+}
+
+.reference h6{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+#research-project-grid{
+    margin: 0;
 }

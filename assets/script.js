@@ -130,5 +130,5 @@ function switchPage(pageId) {
 
 // 页面加载时默认显示第一个页面（例如: aboutMe）
 window.onload = function() {
-    switchPage('design');  // 默认显示 'aboutMe' 页面
+    switchPage('aboutMe');  // 默认显示 'aboutMe' 页面
 };
