@@ -1,4 +1,4 @@
-let scrolling = false;
+/*let scrolling = false;
 
 document.addEventListener("wheel", (e) => {
     if (scrolling) return; // 防止连续触发
@@ -66,7 +66,7 @@ function scrollPrevious() {
         // 如果已经滚动到第一个 div，停止滚动
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
-}
+}*/
 
 //Language Translator
 let currentLanguage = 'en';
@@ -103,16 +103,32 @@ updateLanguage();
 
 
 //Page Switch
-        function switchPage(pageId) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.content');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
+function switchPage(pageId) {
+    // Hide all pages
+    const pages = document.querySelectorAll('.page');
+    const pageNames = document.querySelectorAll('.center h6');
 
-            // Show the selected page
-            const selectedPage = document.getElementById(pageId);
-            if (selectedPage) {
-                selectedPage.classList.add('active');
-            }
-        }
+    pages.forEach(page => {
+        page.classList.remove('active');
+    });
+    pageNames.forEach(pageName => {
+        pageName.classList.remove('active');
+    });
+
+    // Show the selected page
+    const selectedPage = document.getElementById(pageId);
+    if (selectedPage) {
+        selectedPage.classList.add('active');
+    }
+    
+    // 激活相应的导航按钮
+    const selectedPageName = document.querySelector(`.center h6[onclick="switchPage('${pageId}')"]`);
+    if (selectedPageName) {
+        selectedPageName.classList.add('active'); // 高亮当前导航按钮
+    }
+}
+
+// 页面加载时默认显示第一个页面（例如: aboutMe）
+window.onload = function() {
+    switchPage('aboutMe');  // 默认显示 'aboutMe' 页面
+};

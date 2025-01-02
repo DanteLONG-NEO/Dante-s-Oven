@@ -38,7 +38,14 @@ h6{
 }
 
 .page.active{
-    display: block;
+    display: flex;
+}
+
+.page-container{
+    margin: 0;
+    height: 100vh; /* 每页高度为视口高度 */
+    scroll-snap-align: center; /* 配合 scroll-snap */
+    position: relative;;
 }
 
 
