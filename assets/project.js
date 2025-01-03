@@ -1,58 +1,3 @@
-//Language Translator
-let currentLanguage = 'en';
-
-// 获取所有带有 data-* 属性的元素
-const translatableElements = document.querySelectorAll('[zh], [en]');
-
-// 获取切换语言的按钮
-const zhButton = document.getElementById('language-zh');
-const enButton = document.getElementById('language-en');
-
-// 更新页面语言的函数
-function updateLanguage() {
-    translatableElements.forEach(element => {
-    // 根据当前语言更新内容
-    element.textContent = element.getAttribute(`${currentLanguage}`);
-    });
-}
-
-// 点击中文按钮时切换语言
-zhButton.addEventListener('click', () => {
-    currentLanguage = 'zh';
-    updateLanguage();
-});
-
-// 点击英文按钮时切换语言
-enButton.addEventListener('click', () => {
-    currentLanguage = 'en';
-    updateLanguage();
-});
-
-// 初次加载时更新页面语言
-updateLanguage();
-
-//page Switch
-window.onload = function() {
-    // 获取 URL 中的 page 参数
-    const urlParams = new URLSearchParams(window.location.search);
-    const pageId = urlParams.get('page');
-
-    // 调用切换页面的函数
-    if (pageId) {
-        switchPage(pageId);
-    }
-};
-
-//切换页面
-function switchPage(pageId) {
-    // 存储目标页面 ID
-    localStorage.setItem('lastVisitedPage', pageId);
-
-    // 跳转到 homepage.html
-    window.location.href = `homepage.html?page=${pageId}`;
-}
-
-
 //Switch Project Image
 let currentIndex = 0;
 
@@ -99,3 +44,62 @@ function updateCarouselTransform() {
 window.addEventListener('resize', () => {
     updateCarouselTransform(); // 调整transform，确保在resize时位置正确
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const gridItems = document.querySelectorAll(".grid-item img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = document.getElementById("close-button");
+    const prevButton = document.getElementById("prev-button");
+    const nextButton = document.getElementById("next-button");
+  
+    let currentIndex = -1;
+  
+    // 打开灯箱
+    function openLightbox(index) {
+      currentIndex = index;
+      const image = gridItems[index];
+      lightboxImage.src = image.src;
+      lightbox.classList.remove("hidden");
+    }
+  
+    // 关闭灯箱
+    function closeLightbox() {
+      lightbox.classList.add("hidden");
+      lightboxImage.src = "";
+    }
+  
+    // 切换到上一张图片
+    function showPrevImage() {
+      if (currentIndex > 0) {
+        openLightbox(currentIndex - 1);
+      }
+    }
+  
+    // 切换到下一张图片
+    function showNextImage() {
+      if (currentIndex < gridItems.length - 1) {
+        openLightbox(currentIndex + 1);
+      }
+    }
+  
+    // 添加事件监听
+    gridItems.forEach((img, index) => {
+      img.addEventListener("click", () => openLightbox(index));
+    });
+  
+    closeButton.addEventListener("click", closeLightbox);
+    prevButton.addEventListener("click", showPrevImage);
+    nextButton.addEventListener("click", showNextImage);
+  
+    // 键盘支持
+    document.addEventListener("keydown", (e) => {
+      if (!lightbox.classList.contains("hidden")) {
+        if (e.key === "ArrowLeft") showPrevImage();
+        if (e.key === "ArrowRight") showNextImage();
+        if (e.key === "Escape") closeLightbox();
+      }
+    });
+});
+  

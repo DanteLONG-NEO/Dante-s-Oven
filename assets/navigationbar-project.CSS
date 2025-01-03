@@ -21,7 +21,6 @@
     border-color: rgba(0,0,0,0.2);
 
     z-index: 100;
-
 }
 
 .left{
@@ -64,26 +63,27 @@
 }
 
 /*Text Style*/
-.navigation-bar h6{
+.navigation-bar a{
     font-family: roboto, arial;
     margin: 0;
     padding: 0;
     font-size: 16px;
+    text-decoration: none;
 
     color: rgba(0,0,0,0.5);
 }
 
-.navigation-bar h6:hover{
+.navigation-bar a:hover{
     color: #eb6100;
     cursor: pointer;
 }
 
-.center h6{
+.center a{
     margin: 0px 24px;
     font-weight: 500;
 }
 
-.center h6.active{
+.center a.active{
     margin: 0px 24px;
     font-weight: 500;
     color: #eb6100;
@@ -94,3 +94,11 @@
     margin: 0px 6px;
     font-weight: 200;
 }
+
+.right a{
+    font-family: roboto, arial;
+    margin: 0px 6px;
+    font-weight: 200;
+    text-decoration: none;
+}
+

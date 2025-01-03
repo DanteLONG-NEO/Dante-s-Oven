@@ -1,4 +1,9 @@
 /*container*/
+.page-container{
+    margin: 0;
+    scroll-snap-align: center; /* 配合 scroll-snap */
+    position: relative;
+}
 
 .navigation-bar{
     display: flex;
@@ -16,7 +21,6 @@
     border-color: rgba(0,0,0,0.2);
 
     z-index: 100;
-
 }
 
 .left{
@@ -97,3 +101,4 @@
     font-weight: 200;
     text-decoration: none;
 }
+
