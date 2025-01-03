@@ -1,0 +1,110 @@
+.carousel-container {
+    position: fixed; /* Adjust as needed */
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    top: 80px;
+    bottom: 0;
+    width: 100vw;
+
+    z-index: 3;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+    flex-shrink: 0;
+    height: 100%;
+    
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+
+    width: 26px;
+    height: 98px;
+    object-fit: contain;
+}
+
+.carousel-btn.left {
+    left: 48px;
+}
+
+.carousel-btn.right {
+    right: 48px;
+}
+
+.arrow-down{
+    width: 62px;
+    height: 36px;
+    object-fit: contain;
+
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    z-index: 15;
+    margin-left: -31px;
+}
+
+.project-description{
+    position: relative;
+    
+    display: block;
+    z-index: 4;
+    margin-top: 100vh;
+    padding-bottom: 100vh;
+
+    background-color: white;
+
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    display: flow-root;
+}
+
+.auto1080{
+    display: block;
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-name{
+    display: block;
+    font-size: 2em;
+    margin: 0;
+    font-size: 16px;
+    padding: 80px 0 12px;
+    letter-spacing: 1px;
+}
+
+.detail dt {
+    float: left;
+    width: 59.32%;
+    display: block;
+}
+
+.detail dd {
+    display: block;
+    float: right;
+    width: 33.15%;
+    color: #AAA;
+    margin-inline-start: 40px;
+    unicode-bidi: isolate;
+}

@@ -1,0 +1,96 @@
+/*container*/
+.page-container{
+    margin: 0;
+    scroll-snap-align: center; /* 配合 scroll-snap */
+    position: relative;
+}
+
+.navigation-bar{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.2);
+
+    z-index: 100;
+
+}
+
+.left{
+    width: 240px;
+    padding-top: 30px;
+    padding-left: 48px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.left img{
+    height: 18px;
+    cursor: pointer;
+}
+
+.center{
+    padding-top: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .center {
+      display: none;
+    }
+}
+
+.right{
+    width: 240px;
+    padding-top: 30px;
+    padding-right: 48px;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: right;
+}
+
+/*Text Style*/
+.navigation-bar h6{
+    font-family: roboto, arial;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    color: rgba(0,0,0,0.5);
+}
+
+.navigation-bar h6:hover{
+    color: #eb6100;
+    cursor: pointer;
+}
+
+.center h6{
+    margin: 0px 24px;
+    font-weight: 500;
+}
+
+.center h6.active{
+    margin: 0px 24px;
+    font-weight: 500;
+    color: #eb6100;
+}
+
+.right h6{
+    font-family: roboto, arial;
+    margin: 0px 6px;
+    font-weight: 200;
+}

@@ -102,33 +102,20 @@ enButton.addEventListener('click', () => {
 updateLanguage();
 
 
-//Page Switch
-function switchPage(pageId) {
-    // Hide all pages
-    const pages = document.querySelectorAll('.page');
-    const pageNames = document.querySelectorAll('.center h6');
 
-    pages.forEach(page => {
-        page.classList.remove('active');
-    });
-    pageNames.forEach(pageName => {
-        pageName.classList.remove('active');
-    });
+//navigation
 
-    // Show the selected page
-    const selectedPage = document.getElementById(pageId);
-    if (selectedPage) {
-        selectedPage.classList.add('active');
-    }
-    
-    // 激活相应的导航按钮
-    const selectedPageName = document.querySelector(`.center h6[onclick="switchPage('${pageId}')"]`);
-    if (selectedPageName) {
-        selectedPageName.classList.add('active'); // 高亮当前导航按钮
+// 滚动到页面容器
+function scrollToPageContainer() {
+    const container = document.querySelector('.page-container');
+    if (container) {
+        container.scrollIntoView({ behavior: 'smooth' });
     }
 }
 
-// 页面加载时默认显示第一个页面（例如: aboutMe）
 window.onload = function() {
-    switchPage('research');  // 默认显示 'aboutMe' 页面
+    // 滚动到正确的容器并切换到对应页面
+    scrollToPageContainer();
 };
+
+

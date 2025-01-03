@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../icons/WebsiteLogo.png" type="image/png">
+        <title>Dante's Website</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="../../assets/general.CSS">
+        <link rel="stylesheet" href="../../assets/cover.CSS">
+        <link rel="stylesheet" href="../../assets/homepage.CSS">
+        <link rel="stylesheet" href="../../assets/homepage-design.CSS">
+        <link rel="stylesheet" href="../../assets/navigationbar.CSS">
+    </head>
+
+    <body>
+        <!--Cover-->
+        <div id="cover">
+            <div class="cover-logo">
+                <img class="cover-image" src="../../icons/cover_logo.png">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="cover-chevron-down"
+            viewBox="0 0 512 512" onclick="scrollNext()"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            <div class="cover-shader"></div>
+        </div>
+        <div class="page-container">
+            <div class="navigation-bar">
+                <div class="left">
+                    <a href="homepage.html"><img src="../../icons/home_icon.png"></a>
+                </div>
+                <div class="center">
+                    <a href="../zh/about/about.html">关于</a>
+                    <a href="../zh/design/design.html">设计</a>
+                    <a href="../zh/research/research.html">研究</a>
+                    <a href="../zh/media/media.html">媒体</a>
+                    <a href="../zh/sports/sports.html">运动</a>
+                    <a href="../zh/others/others.html">其他</a>
+                </div>
+                <div class="right">
+                    <a href="../homepage.html">EN</a>
+                    <h6>|</h6>
+                    <a href="../zh/homepage.html">中文</a>
+                </div>
+            </div>
+            <!--about-->
+            <div class="page" id="aboutMe">
+                <div class="main-container">
+                    <div class="image-container">
+                        <img src="../../images/aboutMe/Self-intro-image.png" style="width: 100%; ">
+                    </div>
+                    <div class="text-container">
+                        <h5 class="name" en="Junxiao (Dante) Long" zh="龙俊潇">龙俊潇</h5>
+                        <h6 class="intro" en="As a multi-disciplinary researcher and designer, I focused on how emerging technology and scientific research can be deployed into design, revitalizing culture and society. My major interests consist of user cases, user experience in Virtual Reality, hardware interaction and wearable interaction. I have strong background in human-centered design, user interface design and user experience research and design of mixed methods."
+                        zh="我是一个跨学科研究者">作为一名跨学科的研究员和设计师，我专注于如何将新兴技术和科学研究应用于设计，以振兴文化和社会。我的主要兴趣包括虚拟现实中的用户案例、用户体验、硬件交互和可穿戴交互。我在以人为中心的设计、用户界面设计以及采用混合方法的用户体验研究与设计方面拥有深厚的背景。</h6>
+                        <h6 class="intro" en="As a previous basketball captain, I boast excellent organization skills and a proven ability to execute tasks effectively. I thrive in challenging environments and I am good in multitasking under multiple deadlines." zh="我是一个跨学科研究者">作为一名前篮球队队长，我拥有出色的组织能力，并且在高效执行任务方面有着良好的记录。我在充满挑战的环境中表现出色，并擅长在多个截止日期下同时处理多项任务。</h6>
+                        <div class="contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                            <h6 class="linkedin">jlong343@gatech.edu</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                            <a class="linkedin" href="https://www.linkedin.com/in/junxiao-long/" target="_blank">https://www.linkedin.com/in/junxiao-long/</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../assets/script.js"></script>
+        <script src="../../assets/cover.js"></script>
+    </body>
+</html>

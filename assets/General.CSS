@@ -33,29 +33,33 @@ h6{
 .page {
     margin: 0;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
 
     font-size: 2rem;
     font-family: Arial, sans-serif;
     scroll-snap-align: center; /* 配合 scroll-snap */
-    display: none;
+
+    height: calc(100vh - 80px);
+    
 
     overflow-y: scroll;
 }
 
-.page.active{
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    flex-shrink: 0;
-}
-
 .page-container{
     margin: 0;
-    height: 100vh; /* 每页高度为视口高度 */
     scroll-snap-align: center; /* 配合 scroll-snap */
-    position: relative;;
+    position: relative;
+
+    padding-top: 80px;
 }
 
-
+#aboutMe{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: calc(100vh - 80px);
+}
 

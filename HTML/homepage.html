@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="icons/WebsiteLogo.png" type="image/png">
+        <link rel="icon" href="../icons/WebsiteLogo.png" type="image/png">
         <title>Dante's Website</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="../assets/cover.CSS">
         <link rel="stylesheet" href="../assets/homepage.CSS">
         <link rel="stylesheet" href="../assets/homepage-design.CSS">
+        <link rel="stylesheet" href="../assets/navigationbar.CSS">
     </head>
 
     <body>
@@ -30,20 +31,20 @@
         <div class="page-container">
             <div class="navigation-bar">
                 <div class="left">
-                    <img src="../icons/home_icon.png">
+                    <a href="homepage.html"><img src="../icons/home_icon.png"></a>
                 </div>
                 <div class="center">
-                    <h6 en="About" zh="关于" onclick="switchPage('aboutMe')"></h6>
-                    <h6 en="Design" zh="设计" onclick="switchPage('design')"></h6>
-                    <h6 en="Research" zh="研究" onclick="switchPage('research')"></h6>
-                    <h6 en="Media" zh="媒体" onclick="switchPage('media')"></h6>
-                    <h6 en="Sports" zh="运动" onclick="switchPage('sports')"></h6>
-                    <h6 en="Others" zh="其他" onclick="switchPage('others')"></h6>
+                    <a href="en/about/about.html">About</a>
+                    <a href="en/design/design.html">Design</a>
+                    <a href="en/research/research.html">Research</a>
+                    <a href="en/media/media.html">Media</a>
+                    <a href="en/sports/sports.html">Sports</a>
+                    <a href="en/others/others.html">Others</a>
                 </div>
                 <div class="right">
-                    <h6 id="language-en">EN</h6>
+                    <a href="homepage.html">EN</a>
                     <h6>|</h6>
-                    <h6 id="language-zh">中文</h6>
+                    <a href="zh/homepage.html">中文</a>
                 </div>
             </div>
             <!--about-->
@@ -53,10 +54,10 @@
                         <img src="../images/aboutMe/Self-intro-image.png" style="width: 100%; ">
                     </div>
                     <div class="text-container">
-                        <h5 class="name" en="Junxiao (Dante) Long" zh="龙俊潇"></h5>
+                        <h5 class="name" en="Junxiao (Dante) Long" zh="龙俊潇">Junxiao (Dante) Long</h5>
                         <h6 class="intro" en="As a multi-disciplinary researcher and designer, I focused on how emerging technology and scientific research can be deployed into design, revitalizing culture and society. My major interests consist of user cases, user experience in Virtual Reality, hardware interaction and wearable interaction. I have strong background in human-centered design, user interface design and user experience research and design of mixed methods."
-                        zh="我是一个跨学科研究者">
-                        <h6 class="intro" en="As a previous basketball captain, I boast excellent organization skills and a proven ability to execute tasks effectively. I thrive in challenging environments and I am good in multitasking under multiple deadlines." zh="我是一个跨学科研究者"></h6>
+                        zh="我是一个跨学科研究者">As a multi-disciplinary researcher and designer, I focused on how emerging technology and scientific research can be deployed into design, revitalizing culture and society. My major interests consist of user cases, user experience in Virtual Reality, hardware interaction and wearable interaction. I have strong background in human-centered design, user interface design and user experience research and design of mixed methods.</h6>
+                        <h6 class="intro" en="As a previous basketball captain, I boast excellent organization skills and a proven ability to execute tasks effectively. I thrive in challenging environments and I am good in multitasking under multiple deadlines." zh="我是一个跨学科研究者">As a previous basketball captain, I boast excellent organization skills and a proven ability to execute tasks effectively. I thrive in challenging environments and I am good in multitasking under multiple deadlines.</h6>
                         </h6>
                         <div class="contact">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
@@ -67,171 +68,8 @@
                     </div>
                 </div>
             </div>
-            <!--Design-->
-            <div class="page" id="design">
-                <div class="project-grid">
-                    <!--Project2-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/0.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Tsinghua University West Gymnasium Renovation Design (March Thesis)" zh="清华大学西体育馆更新设计（研究生毕设）"></h5>
-                            <h6>[ <b>2024</b> ]</h6>
-                            <h6 en="Human Centered Design, Architecture Design, Visual Interface Design" zh="人本设计，建筑设计，视导设计"></h6>
-                        </div>
-                    </div>
-                    <!--Project3-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/2.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Museum of Agriculture (Barch Thesis)" zh="三山五园文化中心（本科毕设）"></h5>
-                            <h6>[ <b>2022</b> ]</h6>
-                            <h6 en="Human Centered Design, Ergonomic Design, Architecture Design, Interactive Design" zh="人本设计，人因设计，建筑设计，交互设计"></h6>
-                        </div>
-                    </div>
-                    <!--Project1-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/0.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5>TechGo</h5>
-                            <h6>[ <b>2024</b> ]</h6>
-                            <h6 en="UX Design, UI Design" zh="用户体验设计，用户界面设计"></h6>
-                        </div>
-                    </div>
-                    <!--Project4-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/Mar_Habitat.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Mar Habitat" zh="火星居留地"></h5>
-                            <h6>[ <b>2023</b> ]</h6>
-                            <h6 en="Experience Design, Computational Design, Architecture Design" zh="体验设计，计算式设计，建筑设计"></h6>
-                        </div>
-                    </div>
-                    <!--Project4-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/LandSwimmer.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Landswimmer (Patented)" zh="陆上游泳器（外观专利）"></h5>
-                            <h6>[ <b>2023</b> ]</h6>
-                            <h6 en="Industrial Design, Product Design, Ergonomic Design, Computational Design" zh="工业设计，产品设计，人因设计，计算式设计"></h6>
-                        </div>
-                    </div>
-                    <!--Project4-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/Space_Shostakovich.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Space Shostakovich" zh="肖斯塔科维奇空间"></h5>
-                            <h6>[ <b>2021</b> ]</h6>
-                            <h6 en="Experience Design, Architecture Design" zh="体验设计，建筑设计"></h6>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-            <!--Research-->
-            <div class="page" id="research">
-                <div class="reference">
-                    <h5 en="Patents and Publications" zh="专利与发表"></h5>
-                    <div>
-                        <a href="https://doi.org/10.1016/j.buildenv.2024.112434" target="_blank">
-                            1.Xinting Gao, Yang Geng, John D. Spengler, Junxiao Long, Ningrui Liu, Zhaoyang Luo, Saleh Kalantari, Weimin Zhuang,
-                            <i>Evaluating the impact of spatial openness on stress recovery: A virtual reality experiment study with psychological and physiological measurements,</i>
-                            Building and Environment,
-                            Volume 269,
-                            2025,
-                            112434,
-                            ISSN 0360-1323,
-                            https://doi.org/10.1016/j.buildenv.2024.112434.
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="../research/6044-2383411IP专利申请受理通知书.pdf" target="_blank">
-                            2.Junxiao, L.; Ercument, G. (Pending). <i>Method, Device, Electronic Apparatus, and Storage Medium for AI-Generated Architectural
-                            Scenes (CN. 202311280838.6).</i> China National Intellectual Property Administration.
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="../research/23A300260YJN-2023305430928-外观设计专利证书-电子版.pdf" target="_blank">
-                            3.Junxiao, L. (2023). <i>Training Equipment of Swimming on Dry-land (Cn. 202330543092.8).</i> China National Intellectual Property
-                            Administration.
-                        </a>
-                    </div>
-                </div>
-                <div class="project-grid" id="research-project-grid">
-                    <!--Project2-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/0.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Study on the Spatial “Comfort and Fluency” of University Recreational Center Based on Cognitive Load (March Thesis)" zh="基于认知负荷的高校综合体育馆空间“舒畅感”设计研究（研究生毕设）"></h5>
-                            <h6>[ <b>2024</b> ]</h6>
-                            <h6 en="Quantitative UX Research, Cognitive Load, Sports Decision-making, EEG, ERP, Eye-tracking, VR" zh="量化用户研究，认知负荷，运动决策，脑电，事件相关电位，眼动追踪，虚拟现实"></h6>
-                        </div>
-                    </div>
-                    <!--Project3-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/2.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Study on the Coupling Relationship Between Work Intensity and Work Interface in Bending Posture Planting Operations (Barch Thesis)" zh="弯姿种植作业强度与工作界面的耦合关系研究 (本科毕设)"></h5>
-                            <h6>[ <b>2022</b> ]</h6>
-                            <h6 en="Human Centered Design, Ergonomic Design, Architecture Design, Interactive Design" zh="人本设计，人因设计，建筑设计，交互设计"></h6>
-                        </div>
-                    </div>
-                    <!--Project1-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/0.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Tech Support Kiosk" zh="技术支持终端"></h5>
-                            <h6>[ <b>2024</b> ]</h6>
-                            <h6 en="Quantitative UX Research, Cognitive Load, Ergonomic Study, Eye-tracking" zh="量化用户研究，认知负荷，人因研究，眼动追踪"></h6>
-                        </div>
-                    </div>
-                    <!--Project1-->
-                    <div class="project-preview-container">
-                        <div class="project-preview-cover">
-                            <img src="../images/projectCovers/1.png" style="width: 100%;">
-                        </div>
-                        <div class="project-preview-description">
-                            <h5 en="Study on the Impact of AI-Generated Architectural Renderings on Emotional Stimuli (Patent Pending)" zh="AI生成建筑渲染图像对情绪刺激的影响研究 （专利申请中）"></h5>
-                            <h6>[ <b>2023</b> ]</h6>
-                            <h6 en="Quantitative UX Research, Usability Test, Sentiment Computing, Stable Diffusion, AI, EEG, SCR" zh="量化用户研究，可用性测试，情感计算，稳定扩散模型，人工智能，脑电，皮肤电导率"></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Media-->
-            <div class="page" id="media" style="background-color: blue">
-                <h1>DANTE LONG</h1>
-            </div>
-            <!--Sports-->
-            <div class="page" id="sports" style="background-color: red;">
-                <h1>DANTE LONG</h1>
-            </div>
-            <!--Others-->
-            <div class="page" id="others" style="background-color: red;">
-                <h1>DANTE LONG</h1>
-            </div>
-
         </div>
         
-
         <script src="../assets/script.js"></script>
         <script src="../assets/cover.js"></script>
     </body>
