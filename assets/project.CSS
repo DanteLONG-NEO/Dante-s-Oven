@@ -131,8 +131,9 @@ dl {
     margin-bottom: 60px;
 }
 
-.detail dd h6{
+.detail dd h6, .detail dd h6 a{
     color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
 
 .video-container {
@@ -245,4 +246,17 @@ button {
     color: #AAA;
     font-size: 12px;
     background-color: #FFF;
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        font-size: 10px;
+        padding: 25px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer span {
+        display: block;
+    }
 }
