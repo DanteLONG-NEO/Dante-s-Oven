@@ -7,6 +7,18 @@
     padding: 48px;
 }
 
+@media screen and (max-width: 900px) {
+    .project-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        flex-shrink: 0;
+    
+        padding: 0;
+        padding-bottom: 12px;
+    }
+}
+
 .project-grid h1{
     background-color: white;
 }

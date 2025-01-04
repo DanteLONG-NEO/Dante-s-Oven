@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../../../../icons/WebsiteLogo.png" type="image/png">
+        <title>Dante's Website</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../../../assets/navigationbar-project.CSS">
+        <link rel="stylesheet" href="../../../../assets/general.CSS">
+        <link rel="stylesheet" href="../../../../assets/project.CSS">
+
+
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="navigation-bar">
+                <div class="left">
+                    <a href="../../../homepage.html"><img src="../../../../icons/home_icon.png"></a>
+                </div>
+                <div class="center">
+                    <a href="../../../zh/about/about.html">关于</a>
+                    <a href="../../../zh/design/design.html">设计</a>
+                    <a href="../../../zh/research/research.html">研究</a>
+                    <a href="../../../zh/media/media.html">媒体</a>
+                    <a href="../../../zh/sports/sports.html">运动</a>
+                    <a href="../../../zh/others/others.html">其他</a>
+                </div>
+                <div class="right">
+                    <a href="../../../en/research/1/projectPage.html">EN</a>
+                    <h6>|</h6>
+                    <a href="../../../zh/research/1/projectPage.html">中文</a>
+                </div>
+            </div>
+            <div class="project-page">
+                <div class="carousel-container">
+                    <button class="carousel-btn left" onclick="Left()">
+                        <img src="../../../../icons/arrow-left.png" style="height: 100%;">
+                    </button>
+                    <button class="carousel-btn right" onclick="scrollRight()">
+                        <img src="../../../../icons/arrow-right.png" style="height: 100%;">
+                    </button>
+                    <div class="arrow-down">
+                        <img src="../../../../icons/down.svg" style="height: 100%;">
+                    </div>
+                    <div class="carousel">
+                        <img src="../../../../images/research/1/09.png" alt="Image 1">
+                        <img src="../../../../images/research/1/10.png" alt="Image 2">
+                        <img style="background-color: black;" src="../../../../images/research/1/11.png" alt="Image 3">
+                        <img style="background-color: black;" src="../../../../images/research/1/12.png" alt="Image 4">
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+                <div class="project-description">
+                    <div class="auto1080">
+                        <h5 class="project-name">AI生成建筑渲染图像对情绪刺激的影响研究 （专利申请中）</h5>
+                        <dl class="detail clear">
+                            <dt>
+                                <h6>
+                                    通过我设计的文本生成器，可以使用生成的TEXT2IMAGE扩散模型生成一系列空间场景。然后，参与者对生成的图像进行情绪评估。可以开发一个CNN模型或其他相关模型，训练AI学习情绪数据集与输入提示之间的关联。由于时间限制，我使用了Stable Diffusion生成实验所需的数据集，而不是训练CNN模型。通过这个协议，可以建立书面提示与情绪结果之间的直接联系。换句话说，AI可以根据场景的描述预测其情绪反馈。<br>
+                                    <br>
+                                    1.AI图像生成输入框架<br>
+                                    基于自然语言，空间信息可以分为三类：“T代表构造（Tectonics），M代表材质（Materiality），A代表氛围（Ambiance）。”T包括空间中的基本尺度、形状和细节构造；M关注不同区域中材料的属性；A则包括非建筑元素，如时间、光线和植物等。每个提示必须以这种总体结构开始，以保持一致性。在建立了主要结构后，内容进一步细分为次要元素，如图示中的Tn、Mn和An。提供的图示展示了一个广泛适用的提示结构原型，通过为不同元素分配权重，可以高效地生成具有一致差异的视觉刺激数据集。<br>
+                                    <br>
+                                    2.可用性测试<br>
+                                    我招募了20名参与者进行文本生成器情绪影响的可用性测试。首先，他们被要求从每组渲染的图像中选择最佳质量的图像，然后根据PAD量表对所选图像的情绪影响力进行评分。结果显示，构造（Tectonics）、材质（Materiality）和氛围（Atmosphere）与愉悦度（Valence）和支配感（Dominance）呈中等负相关。构造与愉悦度之间有较强的正相关。这与实验假设基本一致。<br>
+                                    <br>
+                                    3.验证实践<br>
+                                    根据从PAD评估中得出的结论，我设计了一系列反映情绪变化的空间序列，主题为情绪博物馆。随后，我招募了34名参与者进行EEG和眼动追踪实验，以评估空间物体的情绪影响力。结果显示，BIN 01、02和03的样本表现出增强的积极反应，而BIN 04和05则呈现出镇静效应。在眼动追踪分析中，观察到参与者首先聚焦于空间中的显著物体，接着是具有特殊形状的区域。在没有特定设计特征的地方，扫视模式趋向于更为分散。<br>
+                                    <br>
+                                </h6>
+                                <!-- 
+                                <div class="video-container">
+                                    <iframe width="100%" aspect-ratio="16 / 9"
+                                        src="https://www.youtube.com/embed/C1px5h9K3XM"
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div> 
+                                -->
+                                
+                            </dt>
+                            <dd>
+                                <h6>
+                                    关键词: 量化用户研究，可用性测试，情感计算，稳定扩散模型，人工智能，脑电，皮肤电导率<br>
+                                    
+                                    <br>项目类型:<br>
+                                    145国家重点实验室，庄惟敏教授<br>
+                                    'Museum of Emotions' 建筑竞赛<br>
+                                    'AI+Architecture Edition 2' 设计工作坊<br>
+                                    <br>
+                                    时间: 2023.5-2024.7<br>
+                                    <br>
+                                    指导: 庄惟敏, 郭安筑<br>
+                                    合作: 独立完成<br>
+                                    <br>
+                                    主要贡献:<br>
+                                    1. 发明了一种用于生成AI工具的三层提示方法，并撰写了专利申请的专利披露文件;<br>
+                                    2. 使用眼动追踪、EEG、EDA和PAD量表对所发明的方法进行了34名参与者的可用性测试，并使用MATLAB和Python进行了数据分析;<br>
+                                    <br>
+                                    专利: <a href="../../../../research/6044-2383411IP专利申请受理通知书.pdf" target="_blank">
+                                        龙俊潇; 郭安筑 (审查中). <i>建筑场景生成方法、装置、电子设备和存储介质 (CN. 202311280838.6).</i> 国家知识产权局.
+                                    </a>
+                                </h6>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="art-gallery">
+                        <div class="auto1080">
+                            <div id="grid-container">
+                                <div class="grid-item">
+                                  <img src="../../../../images/research/1/AG_01.webp" alt="Image 1">
+                                </div>
+                                <div class="grid-item">
+                                  <img src="../../../../images/research/1/AG_02.png" alt="Image 2">
+                                </div>
+                                <div class="grid-item">
+                                  <img src="../../../../images/research/1/AG_03.png" alt="Image 3">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/research/1/AG_04.png" alt="Image 4">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/research/1/AG_05.png" alt="Image 5">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/research/1/AG_06.png" alt="Image 6">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/research/1/AG_07.png" alt="Image 7">
+                                </div>
+                                <!-- 添加更多图片 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">作品版权及解释权归龙俊潇所有，<span>未经允许不得转载或引用</span></div>
+                </div>
+            </div>            
+        </div>
+        <div id="lightbox" class="hidden">
+            <button id="close-button">X</button>
+            <button id="prev-button">
+                <img src="../../../../icons/arrow-left.png">
+            </button>
+            <button id="next-button">
+                <img src="../../../../icons/arrow-right.png">
+            </button>
+            <img id="lightbox-image" src="" alt="Preview">
+        </div>
+        <script src="../../../../assets/project.js"></script>
+    </body>
+
+</html>

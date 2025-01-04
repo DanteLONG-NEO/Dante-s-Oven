@@ -134,6 +134,7 @@ dl {
 .detail dd h6, .detail dd h6 a{
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    text-align: left;
 }
 
 .video-container {
@@ -172,6 +173,7 @@ iframe, video {
     width: 100%;
     padding-top: 100%; 
     overflow: hidden; 
+    image-rendering: auto;
 }
 
 .grid-item img {
@@ -182,6 +184,7 @@ iframe, video {
     height: 100%;
     object-fit: cover; 
     cursor: pointer;
+    image-rendering: auto;
 }
 
 

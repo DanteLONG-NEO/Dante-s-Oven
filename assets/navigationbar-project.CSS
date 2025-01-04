@@ -24,7 +24,7 @@
 }
 
 .left{
-    width: 240px;
+    width: 120px;
     padding-top: 30px;
     padding-left: 48px;
     display: flex;
@@ -51,7 +51,7 @@
 }
 
 .right{
-    width: 240px;
+    width: 120px;
     padding-top: 30px;
     padding-right: 48px;
     
