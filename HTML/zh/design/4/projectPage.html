@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../../../../icons/WebsiteLogo.png" type="image/png">
+        <title>Dante's Website</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../../../assets/navigationbar-project.CSS">
+        <link rel="stylesheet" href="../../../../assets/general.CSS">
+        <link rel="stylesheet" href="../../../../assets/project.CSS">
+
+
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="navigation-bar">
+                <div class="left">
+                    <a href="../../../homepage.html"><img src="../../../../icons/home_icon.png"></a>
+                </div>
+                <div class="center">
+                    <a href="../../../zh/about/about.html">关于</a>
+                    <a href="../../../zh/design/design.html">设计</a>
+                    <a href="../../../zh/research/research.html">研究</a>
+                    <a href="../../../zh/media/media.html">媒体</a>
+                    <a href="../../../zh/sports/sports.html">运动</a>
+                    <a href="../../../zh/others/others.html">其他</a>
+                </div>
+                <div class="right"> 
+                    <a href="../../../en/design/4/projectPage.html">EN</a>
+                    <h6>|</h6>
+                    <a href="../../../zh/design/4/projectPage.html">中文</a>
+                </div>
+            </div>
+            <div class="project-page">
+                <div class="carousel-container">
+                    <button class="carousel-btn left" onclick="Left()">
+                        <img src="../../../../icons/arrow-left.png" style="height: 100%;">
+                    </button>
+                    <button class="carousel-btn right" onclick="scrollRight()">
+                        <img src="../../../../icons/arrow-right.png" style="height: 100%;">
+                    </button>
+                    <div class="arrow-down">
+                        <img src="../../../../icons/down.svg" style="height: 100%;">
+                    </div>
+                    <div class="carousel">
+                        <img style="background-color: black;" src="../../../../images/design/4/16.png" alt="Image 1">
+                        <img src="../../../../images/design/4/17.png" alt="Image 2">
+                        <img src="../../../../images/design/4/18.png" alt="Image 3">
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+                <div class="project-description">
+                    <div class="auto1080">
+                        <h5 class="project-name">三山五园文化中心（本科毕设）</h5>
+                        <dl class="detail clear">
+                            <dt>
+                                <h6>
+                                    项目的灵感来自于场地曾是清代帝王进行耕作问农的场所，因此想以一个地下现代农作博物馆的形式来延续场地文脉。<br>
+                                    <br>
+                                    1.人因设计<br>
+                                    基于人因实验研究的结果，我遴选出了4个让体验者背部肌肉能够适当增加能量消耗，但不至于损害健康的界面进行细部设计。其目的在于通过“不舒适”来增强农作活动的具身性体验。根据人体工学标准，该设计考虑了可调节照明和储物功能等因素。在人体左侧设置了一种辅助装置，以解决左侧肌肉更易疲劳的问题。<br>
+                                    <br>
+                                    2.细部构造<br>
+                                    细部构造除了要考虑人与空间的互动，还需满足作物生长所需的设备空间。因此，设计中以角钢作为主要结构材料，实现了从装置到空间结构的延展。种植系统采用滴灌装置，通过30cm以下的容器中的水泵提供培育所需的营养液。地板通风系统则用于满足作物生长所需的温湿度条件。可调节照明系统可适应不同界面的高度需求。在75cm处设置了一个便于站立的辅助设施，专为右利手人群设计。在160cm处的工具箱上安装了一块LED屏幕，用于实时显示作物生长情况、环境中的CO2浓度等信息。<br>
+                                    <br>
+                                    3.体验设计<br>
+                                    按照作物生长的时间段进行了4个场馆的划分：育种、播种、维持和收获馆。这样游客就有多次来到该场馆体验的理由。由于育种室无需光照，且环境条件与其他阶段明显不同，因此单独设为一个新的馆，在空间形式和体验上和其他场馆进行区分。<br>
+                                </h6>
+                                 
+                                <div class="video-container">
+                                    <iframe width="100%" aspect-ratio="16 / 9"
+                                        src="https://www.youtube.com/embed/NlwXHvQhaoc"
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                
+                            </dt>
+                            <dd>
+                                <h6>
+                                    设计类型: 人本设计，人因设计，建筑设计，交互设计<br>
+                                    项目类型：清华大学建筑学院本科毕业设计<br>
+                                    <br>
+                                    时间: 2022.3-2022.6<br>
+                                    <br>
+                                    指导：张利教授，清华大学建筑学院院长，<a href="http://www.teamminus.com" target="_blank">teamminus</a><br>
+                                    合作: 独立完成<br>
+                                    <br>
+                                    主要贡献:<br>
+                                    1.根据作物生长周期划分四个场馆进行体验设计；<br>
+                                    2.根据实验结果得出的偏差界面设计交互装置，并将装置拓展为建筑结构；<br>
+                                    3.为每个交互装置设计UI界面展示作物生长信息以及环境信息；<br>
+                                    <br>
+                                    获奖: 清华大学建筑学院本科毕设A等作品<br>
+                                    <br>
+                                    技能：rhino、EMGworks、SPSS、AutoCAD、Adobe Illustrator、Adobe Photoshop、Enscape<br>
+                                </h6>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="art-gallery">
+                        <div class="auto1080">
+                            <div id="grid-container">
+                                <div class="grid-item">
+                                  <img src="../../../../images/design/4/AG_01.png" alt="Image 1">
+                                </div>
+                                <div class="grid-item">
+                                  <img src="../../../../images/design/4/AG_02.png" alt="Image 2">
+                                </div>
+                                <div class="grid-item">
+                                  <img src="../../../../images/design/4/AG_03.jpg" alt="Image 3">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/design/4/AG_04.jpg" alt="Image 4">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/design/4/AG_05.png" alt="Image 5">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/design/4/AG_06.png" alt="Image 6">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/design/4/AG_07.png" alt="Image 7">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="../../../../images/design/4/AG_08.png" alt="Image 8">
+                                </div>
+                                <!-- 添加更多图片 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">作品版权及解释权归龙俊潇所有，<span>未经允许不得转载或引用</span></div>
+                </div>
+            </div>            
+        </div>
+        <div id="lightbox" class="hidden">
+            <button id="close-button">X</button>
+            <button id="prev-button">
+                <img src="../../../../icons/arrow-left.png">
+            </button>
+            <button id="next-button">
+                <img src="../../../../icons/arrow-right.png">
+            </button>
+            <img id="lightbox-image" src="" alt="Preview">
+        </div>
+        <script src="../../../../assets/project.js"></script>
+    </body>
+
+</html>
